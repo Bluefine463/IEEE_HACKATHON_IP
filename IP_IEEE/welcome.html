@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top:5rem;
+            background: url(./img/image.png);
+            background-size:contain;
+            background-color: #f8f9fa;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn-group {
+            margin-top: 20px;
+        }
+        .btn-custom {
+            height:100px;
+            width: 250px;
+            margin: 0 10px;
+            font-size:30px;
+            font-weight:bolder;
+            border-radius: 3%;
+            background-color:rgb(37, 159, 211);
+        }
+        h1{
+            font-weight:bolder;
+            font-size:65px;
+            color:rgb(21, 109, 193);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>I am looking</h1>
+
+        <div class="btn-group">
+            <button class="btn btn-primary btn-custom " id="jobSeekerBtn">For a Job</button>
+            <button class="btn btn-primary btn-custom " id="hireBtn">To Hire</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("jobSeekerBtn").onclick = function() {
+            window.location.href = "./form.html";  // Navigate to job seeker page
+        };
+
+        document.getElementById("hireBtn").onclick = function() {
+            window.location.href = "./employer";  // Navigate to employer page
+        };
+    </script>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .job-listing {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .job-listing:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Job Portal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="./img/download.png" alt="Profile Icon" class="profile-icon"> John Doe
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h3 class="mb-4">Latest Job Listings</h3>
+
+        <!-- Job Listing 1 -->
+        <div class="job-listing">
+            <h5>Software Engineer</h5>
+            <p><strong>Company:</strong> ABC Tech</p>
+            <p><strong>Location:</strong> New York, NY</p>
+            <p><strong>Salary:</strong> $90,000 - $120,000</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+
+        <!-- Job Listing 2 -->
+        <div class="job-listing">
+            <h5>Data Analyst</h5>
+            <p><strong>Company:</strong> XYZ Data Solutions</p>
+            <p><strong>Location:</strong> San Francisco, CA</p>
+            <p><strong>Salary:</strong> $75,000 - $95,000</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+
+        <!-- Job Listing 3 -->
+        <div class="job-listing">
+            <h5>Web Developer</h5>
+            <p><strong>Company:</strong> WebGen Solutions</p>
+            <p><strong>Location:</strong> Los Angeles, CA</p>
+            <p><strong>Salary:</strong> $85,000 - $110,000</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
